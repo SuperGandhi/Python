@@ -35,16 +35,22 @@ class Dino(Juguete):
     name = None
     
     def _init_(self, name):
-        self.color = "Green"
-        self.name = name
+        super().__init__(name)
         print("Estoy en el constructor", name)
     
     def verEscamas(self):
         pass
 
-p = Dino()
-print(p.color)
-print(p.name)
+# def enciende(name):
+#     print('Invoca a enciende', name)
+
+# dictionary = {
+#     '_encendido': False,
+#     'enciende': enciende,
+#     'apaga': apaga,
+# }
+
+# dictionary['enciende']('hi')
 
 
 
